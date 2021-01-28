@@ -1,0 +1,32 @@
+.icons {
+  padding: 96px 135px;
+  background-color: #faf0e6;
+  h2 {
+    font-size: 64px;
+    font-weight: 700;
+    text-align: start;
+    margin-top: 0;
+  }
+  p {
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .icons {
+    padding: 40px 90px;
+    h2 {
+      font-size: 5vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .icons {
+    padding: 20px 45px;
+    h2 {
+      font-size: 40px;
+    }
+  }
+}

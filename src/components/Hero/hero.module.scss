@@ -1,0 +1,140 @@
+.container {
+  display: grid;
+  overflow: hidden;
+  grid-auto-flow: column;
+  padding: 96px 0 0 135px;
+  background-color: #01178B;
+  grid-auto-columns: 1fr 1fr;
+  grid-template-rows: 560px;
+}
+
+.info-content {
+  z-index: 2;
+  text-align: start;
+}
+
+.image-content {
+  height: 100%;
+  position: relative;
+}
+
+.title {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 92px;
+  line-height: 92px;
+  font-weight: bold;
+}
+
+.description {
+  color: #FFFFFF;
+  font-size: 24px;
+  margin: 24px 0 0 0;
+  line-height: 130%;
+  font-weight: normal;
+}
+
+.buttons {
+  margin: 32px 0 0 0;
+  display: flex;
+}
+
+.button {
+  border: none;
+  display: flex;
+  margin: 0 12px 0 0;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 24px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  // BUTTONS TEXT
+  color: #140CA3;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: bold;
+  font-style: normal;
+  
+  img {
+    padding: 0 10px;
+  }
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.8)
+}
+
+.decor {
+  z-index: 1;
+  top: 90%;
+  right: 20%;
+  position: absolute;
+  transform: scale(4.3);
+}
+
+.image {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 50% 0 0 0;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    grid-gap: 40px;
+    padding: 0;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .info-content {
+    margin: 0 10%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .decor {
+    max-width: 70%;
+    transform: scale(4.1);
+  }
+
+  .image {
+    position: static;
+    max-width: 100%;
+  }
+
+  .image-content {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .button {
+    padding: 6px 12px;
+  }
+}
+
